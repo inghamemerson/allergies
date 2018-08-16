@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Allergies</title>
+  <title>Don't Kill Jamie</title>
   <link rel="stylesheet" href="/css/normalize.css">
   <style>
     html, body {
@@ -39,16 +39,17 @@
       padding: 0 20px;
     }
 
+    .allergy-h1 {
+      font-size: 24px;
+      color: #505050;
+      margin-bottom: 10px;
+    }
+
     .allergy-list-item {
       font-size: 36px;
       color: #414141;
       line-height: 1.2;
       margin-bottom: 2px;
-    }
-
-    .allergy-list-item:hover {
-      color: #E67457;
-      cursor: default;
     }
 
     .allergy-asterix {
@@ -58,19 +59,26 @@
     .allergy-footnote {
       font-size: 14px;
     }
+
+    @media screen and (min-width: 600px) {
+      .allergy-h1 {
+        font-size: 42px;
+      }
+    }
   </style>
 </head>
 <body>
   <main>
     <section class="allergy-container">
+      <h1 class="allergy-h1">Jamie is Allergic To:</h1>
       <ul class="allergy-list">
-        <li class="allergy-list-item">Apples</li>
         <li class="allergy-list-item">Almonds</li>
-        <li class="allergy-list-item">Peaches</li>
-        <li class="allergy-list-item">Pears</li>
-        <li class="allergy-list-item">Mangos</li>
+        <li class="allergy-list-item">Apples</li>
         <li class="allergy-list-item">Apricots</li>
         <li class="allergy-list-item">Cherries</li>
+        <li class="allergy-list-item">Mangos</li>
+        <li class="allergy-list-item">Peaches</li>
+        <li class="allergy-list-item">Pears</li>
         <li class="allergy-list-item">Dairy <span class="allergy-asterix">*</span></li>
       </ul>
       <p class="allergy-footnote"><span class="allergy-asterix">*</span> Not allergic to dairy, just dairy incapable.</p>
