@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Allergies</title>
+  <link rel="stylesheet" href="/css/normalize.css">
+  <style>
+    html, body {
+      font-family: Avenir, Helvetica, Arial, sans-serif;
+      background-color: #f2f2f2;
+    }
+
+    body {
+      display: flex;
+      min-height: 100vh;
+      flex-direction: column;
+      border: 20px solid #fefefe;
+      box-sizing: border-box;
+    }
+
+    main {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      flex: 1;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+    }
+
+    .allergy-container {
+      width: 100%;
+      max-width: 400px;
+      padding: 0 20px;
+    }
+
+    .allergy-list-item {
+      font-size: 36px;
+      color: #414141;
+    }
+
+    .allergy-list-item:hover {
+      color: #E67457;
+      cursor: default;
+    }
+
+    .allergy-asterix {
+      color: #E67457;
+    }
+
+    .allergy-footnote {
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <section class="allergy-container">
+      <ul class="allergy-list">
+        <li class="allergy-list-item">Apples</li>
+        <li class="allergy-list-item">Almonds</li>
+        <li class="allergy-list-item">Peaches</li>
+        <li class="allergy-list-item">Pears</li>
+        <li class="allergy-list-item">Mangos</li>
+        <li class="allergy-list-item">Apricots</li>
+        <li class="allergy-list-item">Cherries</li>
+        <li class="allergy-list-item">Dairy <span class="allergy-asterix">*</span></li>
+      </ul>
+      <p class="allergy-footnote"><span class="allergy-asterix">*</span> Not allergic to dairy, just dairy incapable.</p>
+    </section>
+  </main>
+</body>
+</html>
